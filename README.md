@@ -16,16 +16,6 @@ docker build -t nodejs-opencv .
 
 This command builds a Docker image named `nodejs-opencv` based on the instructions in the Dockerfile.
 
-## Running the Docker Container
-
-After the image has been successfully built, you can run a container using the following command:
-
-```bash
-docker run -it --name my-app nodejs-opencv
-```
-
-This command starts a container named `my-app` from the `nodejs-opencv` image. The `-it` option allows you to interact with the container through your terminal.
-
 ## What's Inside the Dockerfile
 
 The Dockerfile in this repository is designed to set up an environment with the following:
@@ -37,8 +27,7 @@ The Dockerfile handles the following tasks:
 - Installing necessary base libraries and tools.
 - Installing Node.js.
 - Building OpenCV 4 from source.
-- Installing OpenCV4
-
+- Installing OpenCV4.
 
 ## Contributing
 
