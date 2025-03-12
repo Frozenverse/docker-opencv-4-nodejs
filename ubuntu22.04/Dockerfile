@@ -24,40 +24,8 @@ RUN apt-get install -y \
     python3-pip \
     python3-numpy \
     libgstreamer1.0-dev \
-    libgstreamer-plugins-base1.0-dev \
-    libgstreamer-plugins-good1.0-dev \
-    libgstreamer-plugins-bad1.0-dev \
-    libgstreamer-plugins-ugly1.0-dev \
-    libgstreamer1.0-0 \
-    libgstreamer1.0-0-dbg \
-    libgstreamer1.0-0-udeb \
-    libgstreamer1.0-dev \
-    libgstreamer1.0-doc \
     gstreamer1.0-plugins-base \
-    gstreamer1.0-plugins-base-apps \
-    gstreamer1.0-plugins-base-dbg \
-    gstreamer1.0-plugins-base-doc \
-    gstreamer1.0-plugins-good \
-    gstreamer1.0-plugins-good-dbg \
-    gstreamer1.0-plugins-good-doc \
-    gstreamer1.0-plugins-bad \
-    gstreamer1.0-plugins-bad-dbg \
-    gstreamer1.0-plugins-bad-doc \
-    gstreamer1.0-plugins-ugly \
-    gstreamer1.0-plugins-ugly-dbg \
-    gstreamer1.0-plugins-ugly-doc \
     gstreamer1.0-libav \
-    gstreamer1.0-doc \
-    gstreamer1.0-tools \
-    gstreamer1.0-x \
-    gstreamer1.0-alsa \
-    gstreamer1.0-gl \
-    gstreamer1.0-gtk3 \
-    gstreamer1.0-qt5 \
-    gstreamer1.0-pulseaudio \
-    gstreamer1.0-tools \
-    gstreamer1.0-x \
-    libgstream \
     ffmpeg \
     libeigen3-dev \
     libfreetype6-dev \
