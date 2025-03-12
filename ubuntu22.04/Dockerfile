@@ -27,7 +27,6 @@ RUN cd opencv && \
     mkdir -p build && \
     cd build && \
     cmake -D CMAKE_BUILD_TYPE=RELEASE \
-          -D CMAKE_INSTALL_PREFIX=/usr/lib \
           -D OPENCV_EXTRA_MODULES_PATH=../opencv_contrib-${OPENCV_VERSION}/modules \
           -D BUILD_EXAMPLES=OFF ../opencv-${OPENCV_VERSION}
 
