@@ -26,15 +26,21 @@ RUN cd opencv && \
 RUN cd opencv && \
     mkdir -p build && \
     cd build && \
-    cmake -D CMAKE_BUILD_TYPE=RELEASE \
-          -D OPENCV_EXTRA_MODULES_PATH=../opencv_contrib-${OPENCV_VERSION}/modules \
-          -D BUILD_EXAMPLES=OFF ../opencv-${OPENCV_VERSION}
+    cmake \
+    -D CMAKE_INSTALL_PREFIX=/usr/local \
+    -D WITH_EIGEN=ON \
+    -D WITH_FFMPEG=ON \
+    -D WITH_FREETYPE=ON \
+    -D WITH_GSTREAMER=ON \
+    -D WITH_FLATBUFFERS=ON \
+    -D OPENCV_EXTRA_MODULES_PATH=../opencv_contrib-${OPENCV_VERSION}/modules \
+    ../opencv-${OPENCV_VERSION}
 
 # Compile OpenCV
 RUN cd opencv/build && \ 
-    cmake --build . --config Release
+    cmake --build .
 
 # Install OpenCV
 RUN cd opencv/build && \
     make install
-    
+
