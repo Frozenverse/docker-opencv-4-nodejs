@@ -63,7 +63,7 @@ RUN cd opencv && \
 
 # Compile OpenCV
 RUN cd opencv/build && \ 
-    cmake --build .
+    cmake --build . -j $(nproc)
 
 # Install OpenCV
 RUN cd opencv/build && \
